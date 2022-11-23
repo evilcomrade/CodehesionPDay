@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
     def index
-        @books = Author.all
+        @books = Book.all
         render json: @books
       end
     
@@ -10,18 +10,16 @@ class BooksController < ApplicationController
       end
     
       def create
-        @book = Book.create(
-            authorname:params[:authorname],
-            createdby:params[:createdby],
-        )
+        @book = Book.new(book_params)
+        @book.save
         render json: @book
       end
     
       def update
           @book = Book.find(params[:id])
           @book.update(
-              authorname:params[:authorname],
-              createdby:params[:createdby],
+              bookname:params[:bookname],
+              author:params[:author],
           )
           render json: @book
       end
@@ -32,6 +30,11 @@ class BooksController < ApplicationController
           @book.destroy
           render json: @book
       end
+
+      private
+        def book_params
+        params.require(:book).permit(:bookname, :author)
+        end
     
       skip_before_action :verify_authenticity_token
 end

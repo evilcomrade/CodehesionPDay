@@ -1530,3 +1530,188 @@ Started GET "/api/v1/books" for ::1 at 2022-11-23 15:59:17 +0200
   
 ActionController::RoutingError (No route matches [GET] "/api/v1/books"):
   
+Started GET "/api/v1/books" for ::1 at 2022-11-23 16:02:59 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/books"):
+  
+Started GET "/api/v1/books" for ::1 at 2022-11-23 16:04:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/books"):
+  
+Started GET "/api/v1/books" for ::1 at 2022-11-23 16:07:31 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as */*
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 30ms (Views: 14.0ms | ActiveRecord: 1.1ms | Allocations: 20060)
+
+
+Started GET "/api/v1/books" for ::1 at 2022-11-23 16:08:18 +0200
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 4.1ms | ActiveRecord: 2.4ms | Allocations: 3133)
+
+
+Started POST "/api/v1/books" for ::1 at 2022-11-23 16:10:47 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"bookname"=>"Adventures of Treebeard", "author"=>1}}
+Completed 200 OK in 32ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 22786)
+
+
+Started GET "/api/v1/books" for ::1 at 2022-11-23 16:10:58 +0200
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.6ms | Allocations: 846)
+
+
+Started GET "/api/v1/books" for ::1 at 2022-11-23 16:11:00 +0200
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 700)
+
+
+Started POST "/api/v1/books" for ::1 at 2022-11-23 16:15:11 +0200
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>1}}
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 4648)
+
+
+Started GET "/api/v1/books" for ::1 at 2022-11-23 16:15:21 +0200
+Processing by BooksController#index as */*
+  [1m[36mBook Load (5.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 1.5ms | ActiveRecord: 5.7ms | Allocations: 801)
+
+
+Started POST "/api/v1/books" for ::1 at 2022-11-23 16:23:04 +0200
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>1}}
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.3ms | Allocations: 1304)
+
+
+Started POST "/api/v1/books" for ::1 at 2022-11-23 16:23:55 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>1}}
+Completed 200 OK in 29ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 22374)
+
+
+Started GET "/api/v1/books" for ::1 at 2022-11-23 16:24:07 +0200
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.6ms | Allocations: 846)
+
+
+Started GET "/api/v1/books" for ::1 at 2022-11-23 16:25:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 1.2ms | ActiveRecord: 0.6ms | Allocations: 5265)
+
+
+Started POST "/api/v1/books" for ::1 at 2022-11-23 16:25:29 +0200
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>1}}
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 19212)
+
+
+Started GET "/api/v1/books" for ::1 at 2022-11-23 16:25:36 +0200
+Processing by BooksController#index as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>1}}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 703)
+
+
+Started POST "/api/v1/books" for ::1 at 2022-11-23 16:29:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>1}}
+Completed 200 OK in 30ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 21345)
+
+
+Started GET "/api/v1/books" for ::1 at 2022-11-23 16:29:14 +0200
+Processing by BooksController#index as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>1}}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.4ms | Allocations: 845)
+
+
+Started POST "/api/v1/books" for ::1 at 2022-11-23 16:29:55 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>1}}
+Completed 200 OK in 30ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 21932)
+
+
+Started GET "/api/v1/books" for ::1 at 2022-11-23 16:30:02 +0200
+Processing by BooksController#index as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>1}}
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.7ms | Allocations: 846)
+
+
+Started POST "/api/v1/books" for ::1 at 2022-11-23 16:33:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>1}}
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.6ms | Allocations: 21520)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Author(#29440) expected, got 1 which is an instance of Integer(#2940)):
+  
+app/controllers/books_controller.rb:13:in `create'
+Started POST "/api/v1/books" for ::1 at 2022-11-23 16:34:27 +0200
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>"1"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 619)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Author(#29440) expected, got "1" which is an instance of String(#2920)):
+  
+app/controllers/books_controller.rb:13:in `create'
+Started GET "/api/v1/authors" for ::1 at 2022-11-23 16:35:17 +0200
+Processing by AuthorsController#index as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>"1"}, "author"=>{}}
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/controllers/authors_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 1.2ms | Allocations: 14777)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/v1/books" for ::1 at 2022-11-23 16:40:53 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>"1"}}
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.4ms | Allocations: 21516)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Author(#29460) expected, got "1" which is an instance of String(#2920)):
+  
+app/controllers/books_controller.rb:13:in `create'
+Started POST "/api/v1/books" for ::1 at 2022-11-23 16:42:57 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"bookname"=>"The adventures of Treebeard", "author"=>"test@test.com"}}
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.5ms | Allocations: 21516)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Author(#29460) expected, got "test@test.com" which is an instance of String(#2920)):
+  
+app/controllers/books_controller.rb:13:in `create'

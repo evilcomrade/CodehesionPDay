@@ -14,15 +14,15 @@ Rails.application.routes.draw do
 
   #resources :authors
 
-  resources :authors do
-    resources :books
-  end
+  #resources :authors do
+  #  resources :books
+  #end
 
-  #get "/api/v1/books", to: "books#index"
-  #get "/api/v1/books/:id", to: "books#show"
-  #post "/api/v1/authors", to: "books#create"
-  #patch "/api/v1/books/:id", to "books#update"
-  #delete "/api/v1/books/:id", to "books#delete"
+  get "/api/v1/books", to: "books#index"
+  get "/api/v1/books/:id", to: "books#show"
+  post "/api/v1/books", to: "books#create"
+  patch "/api/v1/books/:id", to: "books#update"
+  delete "/api/v1/books/:id", to: "books#delete"
 
   root "authors#index"
   
