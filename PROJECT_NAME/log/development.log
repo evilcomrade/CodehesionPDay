@@ -84,3 +84,10 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 23ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 5703)
 
 
+Started GET "/" for 127.0.0.1 at 2022-11-23 09:16:57 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kopanophutiyagae/.rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kopanophutiyagae/.rvm/gems/ruby-3.0.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.5ms | Allocations: 633)
+Completed 200 OK in 15ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 5703)
+
+
